@@ -2,6 +2,8 @@
 
 
 console.log('Script filessss')
+console.log('Script filessss')
+
 
 
 const weatherForm = document.querySelector('form') //grabbing the object
