@@ -5,6 +5,7 @@ const request = require('request')
 const findCordinate = require('./utils/forecast')
 const weatherByCord1 = require('./utils/geocode')
 
+const port = process.env.PORT || 3000 // takes heroku's enviroment port, if we run locally then chooses 3000s
 const app = express()
 
 // define paths for express config
@@ -86,6 +87,6 @@ app.get('/*', (req,res) => {
 
 
 
-app.listen(3000, () =>{
-    console.log('listening')
+app.listen(port, () =>{
+    console.log('Server is up on port ' + port)
 })
