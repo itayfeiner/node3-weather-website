@@ -63,7 +63,8 @@ app.get('/weather', (req, res) => {
                 country: data1.country,
                 region: data1.region,
                 temperture: data1.temp,
-                forecast: data1.mood
+                forecast: data1.mood,
+                humidity: data1.humidity
             })
         })
     }) 

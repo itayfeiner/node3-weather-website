@@ -12,7 +12,8 @@ const weatherByCord1 = (lat, lot, callback) => {
                 country: response.body.location.country,
                 region: response.body.location.region,
                 temp: response.body.current.temperature,
-                mood: response.body.current.weather_descriptions[0]
+                mood: response.body.current.weather_descriptions[0],
+                humidity: response.body.current.humidity
             })
         }
     })

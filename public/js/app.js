@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (e) => {
             return messageOne.textContent = data.error
         }
         messageOne.textContent = data.region + ', ' + data.country
-        messageTwo.textContent = 'It is currently ' + data.forecast + ' with temperture of ' + data.temperture + ' degrees.'
+        messageTwo.textContent = 'It is currently ' + data.forecast + ' with temperture of ' + data.temperture + ' degrees and humidity of ' + data.humidity + '%.'
         
     })
 })
